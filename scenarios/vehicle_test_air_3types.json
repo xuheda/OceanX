@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "comment": [
+    "Air-vehicle integration scenario: X500, StandardVTOL, and RCCessna.",
+    "NED z is negative above mean sea level; vehicles start in one line at 30 m altitude."
+  ],
+  "vehicles": [
+    {"name": "x500_test", "vehicle_profile": "X500", "location": [-80.0, 0.0, -30.0], "rotation": [0.0, 0.0, 0.0]},
+    {"name": "standard_vtol_test", "vehicle_profile": "StandardVTOL", "location": [0.0, 0.0, -30.0], "rotation": [0.0, 0.0, 0.0]},
+    {"name": "rc_cessna_test", "vehicle_profile": "RCCessna", "location": [80.0, 0.0, -30.0], "rotation": [0.0, 0.0, 0.0]}
+  ]
+}

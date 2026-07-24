@@ -1,0 +1,81 @@
+OceanX Proprietary Source Code License
+
+Copyright (c) 2026 the applicable OceanX rights holders.
+All rights reserved.
+
+1. Scope
+
+This license applies to OceanX-owned source code, build logic, project files,
+documentation, models, and other material in this repository unless a file or
+directory carries a different license or third-party notice (the "OceanX
+Material"). "Rights Holders" means the individuals or legal entities that own
+the applicable copyright or are authorized to license it.
+
+2. Limited internal authorization
+
+Possession of, or access to, the OceanX Material does not grant a public,
+open-source, commercial, patent, trademark, or redistribution license. A person
+may use and modify the OceanX Material only to the extent expressly authorized
+in writing by the applicable Rights Holders and only for the authorized
+internal development, evaluation, testing, or support purpose.
+
+3. Restrictions
+
+Except where an applicable written agreement expressly permits it, no person
+may copy, publish, disclose, distribute, sublicense, sell, lease, host for third
+parties, create a competing derivative product from, or otherwise make the
+OceanX Material available to another person. Copyright, confidentiality,
+attribution, and license notices may not be removed or altered. Reverse
+engineering and circumvention are prohibited only to the maximum extent
+permitted by applicable law.
+
+4. Runtime distributions
+
+This source-code license does not authorize distribution of an OceanX Runtime.
+Runtime binaries are licensed only under the end-user or commercial agreement
+delivered with the applicable release. Editable scenarios, vehicle profiles,
+and user-created data remain subject to the terms stated in that agreement.
+
+5. Third-party material
+
+Third-party software and assets are not relicensed under this document. They
+remain governed by their respective licenses and terms, including, where
+applicable, Epic Games' Unreal Engine terms, Fab or Marketplace content terms,
+Oceanology terms, Apache-2.0, BSD-3-Clause, MIT, MPL-2.0, and zlib licenses.
+See THIRD_PARTY_NOTICES.md and ASSET_PROVENANCE.json. In the event of a
+conflict, the third-party terms control for the corresponding third-party
+material.
+
+The OceanX ROS 2 interface and support packages that carry the separate
+ros/LICENSE or package-level MIT notices remain available under those MIT
+terms. Upstream repositories retained under engine/Import, third_party, or
+other dependency directories remain under their own notices.
+
+6. No warranty
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE OCEANX MATERIAL IS
+PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY,
+SAFETY, OR RELIABILITY.
+
+7. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE RIGHTS HOLDERS SHALL NOT
+BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR
+PUNITIVE DAMAGES, OR FOR LOSS OF DATA, PROFITS, REVENUE, GOODWILL, OR BUSINESS
+INTERRUPTION, ARISING FROM ACCESS TO OR USE OF THE OCEANX MATERIAL. NOTHING IN
+THIS DOCUMENT EXCLUDES LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED.
+
+8. Prior grants and written agreements
+
+This license does not revoke rights validly granted for a copy distributed
+under an earlier license, and it does not replace a signed employment,
+contributor, confidentiality, evaluation, commercial, or source-escrow
+agreement. If such an agreement conflicts with this document, that agreement
+controls for its parties and subject matter.
+
+9. Reservation of rights
+
+No rights are granted by implication or estoppel. All rights not expressly
+granted in an applicable written agreement are reserved.

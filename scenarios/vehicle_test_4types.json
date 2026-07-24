@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "comment": [
+    "Four-vehicle profile integration test scenario.",
+    "Contains one EcaA9, LAUV, DesistekSaga, and RexROV2.",
+    "All vehicles start in one line at 200 m depth with 200 m spacing."
+  ],
+  "vehicles": [
+    {
+      "name": "ecaa9_test",
+      "location": [
+        -300.0,
+        0.0,
+        100.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vehicle_profile": "EcaA9"
+    },
+    {
+      "name": "lauv_test",
+      "location": [
+        -100.0,
+        0.0,
+        100.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vehicle_profile": "LAUV"
+    },
+    {
+      "name": "desistek_test",
+      "location": [
+        100.0,
+        0.0,
+        100.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vehicle_profile": "DesistekSaga"
+    },
+    {
+      "name": "rexrov2_test",
+      "location": [
+        300.0,
+        0.0,
+        100.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vehicle_profile": "RexROV2"
+    }
+  ]
+}

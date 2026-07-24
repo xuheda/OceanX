@@ -1,0 +1,186 @@
+{
+  "name": "OceanX Eight-Vehicle Control Baseline",
+  "description": "A conservative, repeatable all-domain waypoint sweep for validating the eight shipped vehicle control profiles.",
+  "scenario": "scenarios/vehicle_test_3domain.json",
+  "vehicle_names": [
+    "x500_test",
+    "standard_vtol_test",
+    "rc_cessna_test",
+    "wamv_test",
+    "ecaa9_test",
+    "lauv_test",
+    "desistek_test",
+    "rexrov2_test"
+  ],
+  "bringup": {
+    "vehicle_names": [
+      "x500_test",
+      "standard_vtol_test",
+      "rc_cessna_test",
+      "wamv_test",
+      "ecaa9_test",
+      "lauv_test",
+      "desistek_test",
+      "rexrov2_test"
+    ],
+    "start_fleet_manager": false,
+    "start_formation": false,
+    "start_pursuit": false,
+    "start_visualization": false,
+    "default_source": "auto",
+    "state_timeout_sec": 4.0,
+    "source_timeout_sec": 3.0
+  },
+  "ready": {
+    "timeout_sec": 45,
+    "per_call_timeout_sec": 6,
+    "strict": true,
+    "require_topic_messages": true,
+    "topics": [
+      "/hydrox/x500_test/out/auv_state",
+      "/hydrox/standard_vtol_test/out/auv_state",
+      "/hydrox/rc_cessna_test/out/auv_state",
+      "/hydrox/wamv_test/out/auv_state",
+      "/hydrox/ecaa9_test/out/auv_state",
+      "/hydrox/lauv_test/out/auv_state",
+      "/hydrox/desistek_test/out/auv_state",
+      "/hydrox/rexrov2_test/out/auv_state"
+    ],
+    "actions": [
+      "/oceanx/x500_test/mission/follow_waypoints",
+      "/oceanx/standard_vtol_test/mission/follow_waypoints",
+      "/oceanx/rc_cessna_test/mission/follow_waypoints",
+      "/oceanx/wamv_test/mission/follow_waypoints",
+      "/oceanx/ecaa9_test/mission/follow_waypoints",
+      "/oceanx/lauv_test/mission/follow_waypoints",
+      "/oceanx/desistek_test/mission/follow_waypoints",
+      "/oceanx/rexrov2_test/mission/follow_waypoints"
+    ]
+  },
+  "acts": [
+    {
+      "at": 0,
+      "type": "wait_ready",
+      "name": "All vehicle control stacks ready"
+    },
+    {
+      "at": 20,
+      "type": "parallel_follow_waypoints",
+      "name": "Eight-vehicle three-domain baseline sweep",
+      "loop": true,
+      "wait": false,
+      "missions": [
+        {
+          "vehicle": "x500_test",
+          "waypoints": [
+            {"x": -235.0, "y": -95.0, "z": -50.0},
+            {"x": -205.0, "y": -120.0, "z": -48.0},
+            {"x": -235.0, "y": -145.0, "z": -50.0},
+            {"x": -265.0, "y": -120.0, "z": -48.0}
+          ],
+          "speed": 4.0,
+          "radius": 6.0
+        },
+        {
+          "vehicle": "standard_vtol_test",
+          "waypoints": [
+            {"x": -155.0, "y": -95.0, "z": -45.0},
+            {"x": -130.0, "y": -120.0, "z": -50.0},
+            {"x": -155.0, "y": -145.0, "z": -45.0},
+            {"x": -205.0, "y": -120.0, "z": -50.0}
+          ],
+          "speed": 6.0,
+          "radius": 8.0
+        },
+        {
+          "vehicle": "rc_cessna_test",
+          "waypoints": [
+            {"x": -20.0, "y": -120.0, "z": -45.0},
+            {"x": 40.0, "y": -50.0, "z": -45.0},
+            {"x": -30.0, "y": 20.0, "z": -45.0},
+            {"x": -130.0, "y": -50.0, "z": -45.0}
+          ],
+          "speed": 14.0,
+          "radius": 20.0
+        },
+        {
+          "vehicle": "wamv_test",
+          "waypoints": [
+            {"x": -150.0, "y": -10.0, "z": 0.0},
+            {"x": -120.0, "y": -40.0, "z": 0.0},
+            {"x": -150.0, "y": -70.0, "z": 0.0},
+            {"x": -210.0, "y": -40.0, "z": 0.0}
+          ],
+          "speed": 1.5,
+          "radius": 5.0
+        },
+        {
+          "vehicle": "ecaa9_test",
+          "waypoints": [
+            {"x": -244.0, "y": 12.0, "z": 100.0},
+            {"x": -230.0, "y": 20.0, "z": 100.0},
+            {"x": -226.0, "y": -8.0, "z": 100.0},
+            {"x": -250.0, "y": -18.0, "z": 100.0}
+          ],
+          "speed": 2.4,
+          "radius": 5.0
+        },
+        {
+          "vehicle": "lauv_test",
+          "waypoints": [
+            {"x": -95.0, "y": 70.0, "z": 100.0},
+            {"x": -75.0, "y": 55.0, "z": 100.0},
+            {"x": -95.0, "y": 35.0, "z": 100.0},
+            {"x": -140.0, "y": 55.0, "z": 100.0}
+          ],
+          "speed": 2.0,
+          "radius": 4.0
+        },
+        {
+          "vehicle": "desistek_test",
+          "waypoints": [
+            {"x": 78.0, "y": -35.0, "z": 100.0},
+            {"x": 78.0, "y": -12.0, "z": 102.0},
+            {"x": 55.0, "y": -12.0, "z": 100.0},
+            {"x": 55.0, "y": -35.0, "z": 98.0}
+          ],
+          "speed": 0.8,
+          "radius": 3.0
+        },
+        {
+          "vehicle": "rexrov2_test",
+          "waypoints": [
+            {"x": 205.0, "y": 35.0, "z": 100.0},
+            {"x": 205.0, "y": 65.0, "z": 102.0},
+            {"x": 175.0, "y": 65.0, "z": 100.0},
+            {"x": 160.0, "y": 35.0, "z": 98.0}
+          ],
+          "speed": 0.6,
+          "radius": 5.0
+        }
+      ]
+    },
+    {
+      "at": 60,
+      "type": "topic_snapshot",
+      "name": "Baseline state snapshot",
+      "topics": [
+        "/hydrox/x500_test/out/auv_state",
+        "/hydrox/standard_vtol_test/out/auv_state",
+        "/hydrox/rc_cessna_test/out/auv_state",
+        "/hydrox/wamv_test/out/auv_state",
+        "/hydrox/ecaa9_test/out/auv_state",
+        "/hydrox/lauv_test/out/auv_state",
+        "/hydrox/desistek_test/out/auv_state",
+        "/hydrox/rexrov2_test/out/auv_state"
+      ],
+      "timeout_sec": 12
+    },
+    {
+      "at": 120,
+      "type": "sleep",
+      "name": "Control hold",
+      "duration_sec": 10
+    }
+  ]
+}
