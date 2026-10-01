@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="20" viewBox="0 0 160 20" role="img" aria-label="Interface: MAVLink HIL">
+  <title>Interface: MAVLink HIL</title>
+  <rect width="64" height="20" fill="#555"/>
+  <rect x="64" width="96" height="20" fill="#007ec6"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">
+    <text x="32" y="15" fill="#010101" fill-opacity=".3">Interface</text>
+    <text x="32" y="14">Interface</text>
+    <text x="112" y="15" fill="#010101" fill-opacity=".3">MAVLink HIL</text>
+    <text x="112" y="14">MAVLink HIL</text>
+  </g>
+</svg>

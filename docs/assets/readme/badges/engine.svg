@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="20" viewBox="0 0 119 20" role="img" aria-label="Engine: UE 5.3">
+  <title>Engine: UE 5.3</title>
+  <rect width="54" height="20" fill="#555"/>
+  <rect x="54" width="65" height="20" fill="#385565"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">
+    <text x="27" y="15" fill="#010101" fill-opacity=".3">Engine</text>
+    <text x="27" y="14">Engine</text>
+    <text x="86.5" y="15" fill="#010101" fill-opacity=".3">UE 5.3</text>
+    <text x="86.5" y="14">UE 5.3</text>
+  </g>
+</svg>

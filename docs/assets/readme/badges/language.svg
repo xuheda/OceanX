@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="20" viewBox="0 0 112 20" role="img" aria-label="Language: C++">
+  <title>Language: C++</title>
+  <rect width="68" height="20" fill="#555"/>
+  <rect x="68" width="44" height="20" fill="#007ec6"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">
+    <text x="34" y="15" fill="#010101" fill-opacity=".3">Language</text>
+    <text x="34" y="14">Language</text>
+    <text x="90" y="15" fill="#010101" fill-opacity=".3">C++</text>
+    <text x="90" y="14">C++</text>
+  </g>
+</svg>
