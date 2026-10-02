@@ -202,6 +202,10 @@ The current HITL path targets Pixhawk / FMUv6C benches. Hardware adaptation and 
 
 **Connect a physical autopilot to the simulated vehicle and inspect both hardware links.** The HITL page maps each vehicle to an autopilot slot, discovers serial ports, and displays the Pixhawk, USB-UART adapters, ROS bridges, and link readiness before launch.
 
+![HITL bench preflight passed for an ECA A9 vehicle and a physical Pixhawk 6C](docs/assets/readme/12-hitl-bench.png)
+
+The screenshot shows a real ECA A9 / Pixhawk 6C bench with autopilot detection, device configuration, and dual-link readiness at **1 / 1**. The vehicle profile and session handshake passed, and the TELEM2 ROS bridge is ready. This is a pre-launch check; simulation data and closed-loop control have not started.
+
 | Link | Role |
 |---|---|
 | TELEM1 | Main HIL link between the simulated vehicle and physical autopilot |
