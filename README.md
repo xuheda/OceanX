@@ -24,11 +24,11 @@
 
 <p align="center">
   <a href="docs/assets/readme/rendering/surface-air-fleet.png"><img src="docs/assets/readme/rendering/surface-air-fleet.png" alt="OceanX rendered sea surface with WAM-V vessels, multirotor UAVs, a fixed-wing aircraft and a VTOL aircraft" width="960"></a><br>
-  <sub>One marine world, multiple vehicle domains. Native 1920 × 1080 viewport capture.</sub>
+  <sub>One marine world, multiple vehicle domains.</sub>
 </p>
 
 > [!NOTE]
-> OceanX is under active development. This repository presents the current implementation; public distribution details will be added when ready. The gallery uses real simulation captures from November 2026. Click any scene or sensor image to open its full-resolution PNG.
+> OceanX is under active development. This repository presents the current implementation; public distribution details will be added when ready. The gallery uses real simulation captures from November 2026. Click any scene or sensor image to view the original.
 
 ## Meet OceanX
 
@@ -55,7 +55,7 @@ OceanX provides the environment, dynamics, sensors, and visualization. HydroX ha
 
 <p align="center">
   <a href="docs/assets/readme/rendering/underwater-fleet.png"><img src="docs/assets/readme/rendering/underwater-fleet.png" alt="External view of a RexROV2, two LAUVs, an ECA A9 and a Desistek SAGA in the underwater fleet" width="960"></a><br>
-  <sub>External scene view of the underwater formation, with the camera carrier on the right. Native 1920 × 1080.</sub>
+  <sub>External scene view of the underwater formation, with the camera carrier on the right.</sub>
 </p>
 
 The surface view above and this underwater view use the same three-domain optical fleet in `IntegratedScene`. This static showcase contains underwater vehicles, WAM-V vessels, multirotors, a fixed-wing aircraft, and a VTOL aircraft. Its three onboard cameras provide the independent sensor frames below.
@@ -85,7 +85,7 @@ The gallery on this page was captured in the authored `IntegratedScene` environm
 
 ## Sensor Gallery
 
-**Native optical frames and production sonar panels from the simulator.** The camera images below retain their full 1280 × 720 pixels. Sonar panels are rendered directly by the application's widgets at 960 × 720, including their original scales, status, and echo intensities. All are lossless PNGs.
+**Optical frames and sonar panels from the simulator.** The sonar views preserve the original scales, status, and echo intensities.
 
 ### Optical · Underwater, Surface & Air
 
@@ -102,13 +102,13 @@ The gallery on this page was captured in the authored `IntegratedScene` environm
   </tr>
 </table>
 
-These are independently sampled frames from the same static fleet, using the common `OpticalImagerSensor` pipeline. Each illustrated camera is configured for 1280 × 720 at 20 Hz. The three frames are independent samples rather than simultaneous exposures. Their configured rate is not a measured throughput claim; see the [capture notes](docs/assets/readme/SCREENSHOTS.md).
+These are independently sampled frames from the same static fleet, using the common `OpticalImagerSensor` pipeline. Each illustrated camera is configured for 20 Hz. The three frames are independent samples rather than simultaneous exposures. Their configured rate is not a measured throughput claim; see the [capture notes](docs/assets/readme/SCREENSHOTS.md).
 
 ### Acoustic · Scene Geometry & Echoes
 
 <p align="center">
   <a href="docs/assets/readme/rendering/sonar-scene.png"><img src="docs/assets/readme/rendering/sonar-scene.png" alt="Rendered underwater sonar scene with actual vehicle targets, a tank group, a concrete barrier and a column" width="960"></a><br>
-  <sub>Vehicle and obstacle geometry in the acoustic showcase. Native 1920 × 1080 viewport capture.</sub>
+  <sub>Vehicle and obstacle geometry in the acoustic showcase.</sub>
 </p>
 
 <table>
@@ -212,7 +212,7 @@ Environment selection and vehicle-group selection are independent. Check initial
 - **HITL:** software links and bench tools are implemented; hardware qualification remains device-specific.
 - **Linux:** no prebuilt runtime is currently available.
 
-Image sources, native dimensions, and capture provenance are recorded in [SCREENSHOTS.md](docs/assets/readme/SCREENSHOTS.md). Scene and sensor images retain the original pixels; no upscaling, recoloring, or generated scene content is used in this gallery.
+Image sources and capture notes are recorded in [SCREENSHOTS.md](docs/assets/readme/SCREENSHOTS.md).
 
 ## License
 
